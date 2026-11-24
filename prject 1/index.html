@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alex Rivera | Computer Science & AI Portfolio</title>
+  <meta name="description" content="Personal portfolio of Alex Rivera - Computer Science student specializing in AI, full-stack systems, and distributed computing. Built entirely with HTML & CSS.">
+  
+  <!-- Google Fonts: Space Grotesk (Headings) & Inter (Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="top">
+
+  <!-- Ambient Glowing Background Spheres -->
+  <div class="ambient-glow glow-1" aria-hidden="true"></div>
+  <div class="ambient-glow glow-2" aria-hidden="true"></div>
+  <div class="ambient-glow glow-3" aria-hidden="true"></div>
+
+  <!-- Sticky Glassmorphic Navigation -->
+  <header class="navbar-wrapper">
+    <nav class="navbar container" aria-label="Main Navigation">
+      <a href="#top" class="nav-brand" aria-label="Alex Rivera Portfolio Home">
+        <span class="brand-code">&lt;</span><span class="brand-name">Alex.dev</span><span class="brand-code"> /&gt;</span>
+      </a>
+
+      <!-- Pure CSS Hamburger Toggle (No JS required) -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox" aria-label="Toggle navigation menu">
+      <label for="nav-toggle" class="nav-toggle-btn" aria-label="Open navigation menu">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </label>
+
+      <ul class="nav-links">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#achievements" class="nav-link">Achievements</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li class="nav-cta-item">
+          <a href="#contact" class="btn btn-outline btn-sm">Hire Me</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Section 1: Hero / Profile -->
+    <section id="about" class="hero-section container">
+      <div class="hero-content">
+        <div class="status-pill">
+          <span class="status-dot"></span>
+          <span>Available for Summer 2025 Internships</span>
+        </div>
+
+        <h1 class="hero-title">
+          Hi, I'm <span class="hero-name">Alex Rivera</span><br>
+          <span class="gradient-text">Designing Intelligence & Scalable Systems.</span>
+        </h1>
+
+        <p class="hero-role">Senior CS Undergraduate &amp; AI Systems Researcher</p>
+
+        <p class="hero-bio">
+          I bridge machine learning and resilient web architecture. Specializing in high-performance backend pipelines, neural network acceleration, and modern user-centric interfaces.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">
+            <span>View Projects</span>
+            <svg class="btn-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg>
+          </a>
+          <a href="#contact" class="btn btn-secondary">
+            <span>Contact Me</span>
+            <svg class="btn-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+          </a>
+        </div>
+
+        <div class="hero-metrics">
+          <div class="metric-card">
+            <span class="metric-num">3.94</span>
+            <span class="metric-label">Cumulative GPA</span>
+          </div>
+          <div class="metric-divider"></div>
+          <div class="metric-card">
+            <span class="metric-num">12+</span>
+            <span class="metric-label">Completed Systems</span>
+          </div>
+          <div class="metric-divider"></div>
+          <div class="metric-card">
+            <span class="metric-num">3x</span>
+            <span class="metric-label">Hackathon Winner</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Profile Avatar with Floating Graphic Effect -->
+      <div class="hero-visual">
+        <div class="avatar-container floating-avatar">
+          <div class="avatar-glow-ring"></div>
+          <div class="avatar-border">
+            <!-- Modern Tech Persona Avatar Illustration (SVG) -->
+            <svg class="avatar-svg" viewBox="0 0 320 320" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Alex Rivera Profile Portrait">
+              <rect width="320" height="320" rx="40" fill="#121826"/>
+              <!-- Tech Grid Background Pattern -->
+              <circle cx="160" cy="160" r="130" stroke="rgba(0, 240, 255, 0.2)" stroke-width="1.5" stroke-dasharray="6 6"/>
+              <circle cx="160" cy="160" r="90" stroke="rgba(124, 58, 237, 0.3)" stroke-width="1"/>
+              
+              <!-- Silhouette & Visual Persona -->
+              <path d="M80 270C80 220 115 200 160 200C205 200 240 220 240 270" fill="url(#avatar-grad-body)" opacity="0.9"/>
+              <circle cx="160" cy="130" r="50" fill="url(#avatar-grad-head)"/>
+              
+              <!-- Futuristic Visor / Glow -->
+              <rect x="125" y="122" width="70" height="16" rx="8" fill="#00F0FF" opacity="0.95" filter="drop-shadow(0 0 8px #00F0FF)"/>
+              
+              <!-- Code Overlay Lines -->
+              <path d="M100 80L120 100L100 120" stroke="#00F0FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.7"/>
+              <path d="M220 80L200 100L220 120" stroke="#7C3AED" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.7"/>
+
+              <defs>
+                <linearGradient id="avatar-grad-head" x1="110" y1="80" x2="210" y2="180" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#38BDF8"/>
+                  <stop offset="1" stop-color="#7C3AED"/>
+                </linearGradient>
+                <linearGradient id="avatar-grad-body" x1="80" y1="200" x2="240" y2="270" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#1E293B"/>
+                  <stop offset="1" stop-color="#0F172A"/>
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+
+          <!-- Floating Micro Badges -->
+          <div class="floating-badge badge-top-right">
+            <span class="badge-icon">⚡</span>
+            <span>PyTorch &amp; C++</span>
+          </div>
+
+          <div class="floating-badge badge-bottom-left">
+            <span class="badge-icon">🚀</span>
+            <span>Cloud &amp; DevOps</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 2: Skills -->
+    <section id="skills" class="skills-section container">
+      <div class="section-header">
+        <span class="section-tag">Capabilities &amp; Stack</span>
+        <h2 class="section-title">Technical Expertise</h2>
+        <p class="section-subtitle">Proficiencies cultivated through university research, production apps, and intensive competitive development.</p>
+      </div>
+
+      <div class="skills-grid">
+        <!-- Skill Progress Bars Column -->
+        <div class="skills-progress-card glass-card">
+          <h3 class="card-title">Core Proficiency Meter</h3>
+          <p class="card-caption">Animated benchmark across primary engineering disciplines</p>
+
+          <div class="skill-meter-list">
+            <!-- Python & AI -->
+            <div class="skill-meter-item">
+              <div class="skill-info">
+                <span class="skill-name">Python &amp; PyTorch (ML / Deep Learning)</span>
+                <span class="skill-percent">95%</span>
+              </div>
+              <div class="progress-track">
+                <div class="progress-bar bar-python" style="--target-width: 95%;"></div>
+              </div>
+            </div>
+
+            <!-- C++ & Systems -->
+            <div class="skill-meter-item">
+              <div class="skill-info">
+                <span class="skill-name">C++ &amp; Systems Architecture</span>
+                <span class="skill-percent">88%</span>
+              </div>
+              <div class="progress-track">
+                <div class="progress-bar bar-cpp" style="--target-width: 88%;"></div>
+              </div>
+            </div>
+
+            <!-- TypeScript & React -->
+            <div class="skill-meter-item">
+              <div class="skill-info">
+                <span class="skill-name">TypeScript / Next.js / React</span>
+                <span class="skill-percent">92%</span>
+              </div>
+              <div class="progress-track">
+                <div class="progress-bar bar-ts" style="--target-width: 92%;"></div>
+              </div>
+            </div>
+
+            <!-- Backend & Cloud -->
+            <div class="skill-meter-item">
+              <div class="skill-info">
+                <span class="skill-name">Distributed Systems, Docker &amp; GCP</span>
+                <span class="skill-percent">84%</span>
+              </div>
+              <div class="progress-track">
+                <div class="progress-bar bar-cloud" style="--target-width: 84%;"></div>
+              </div>
+            </div>
+
+            <!-- Database & SQL -->
+            <div class="skill-meter-item">
+              <div class="skill-info">
+                <span class="skill-name">PostgreSQL, Redis &amp; Database Design</span>
+                <span class="skill-percent">86%</span>
+              </div>
+              <div class="progress-track">
+                <div class="progress-bar bar-db" style="--target-width: 86%;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Categorized Skill Pills Column -->
+        <div class="skills-categories">
+          <!-- Category 1: Languages -->
+          <div class="category-card glass-card">
+            <div class="category-header">
+              <span class="category-icon">💻</span>
+              <h4 class="category-title">Programming Languages</h4>
+            </div>
+            <div class="pills-wrapper">
+              <span class="skill-pill">Python</span>
+              <span class="skill-pill">C / C++</span>
+              <span class="skill-pill">TypeScript</span>
+              <span class="skill-pill">JavaScript (ES6+)</span>
+              <span class="skill-pill">Rust (Basics)</span>
+              <span class="skill-pill">SQL</span>
+              <span class="skill-pill">HTML5 &amp; CSS3</span>
+            </div>
+          </div>
+
+          <!-- Category 2: Frameworks & Libraries -->
+          <div class="category-card glass-card">
+            <div class="category-header">
+              <span class="category-icon">⚡</span>
+              <h4 class="category-title">Frameworks &amp; Toolkits</h4>
+            </div>
+            <div class="pills-wrapper">
+              <span class="skill-pill">PyTorch</span>
+              <span class="skill-pill">React</span>
+              <span class="skill-pill">Next.js</span>
+              <span class="skill-pill">FastAPI</span>
+              <span class="skill-pill">Node.js / Express</span>
+              <span class="skill-pill">Tailwind CSS</span>
+              <span class="skill-pill">OpenCV</span>
+            </div>
+          </div>
+
+          <!-- Category 3: Cloud & Engineering Tools -->
+          <div class="category-card glass-card">
+            <div class="category-header">
+              <span class="category-icon">🛠️</span>
+              <h4 class="category-title">Cloud &amp; DevOps</h4>
+            </div>
+            <div class="pills-wrapper">
+              <span class="skill-pill">Google Cloud Platform</span>
+              <span class="skill-pill">Docker &amp; Containers</span>
+              <span class="skill-pill">Git &amp; GitHub Actions</span>
+              <span class="skill-pill">Linux / Bash</span>
+              <span class="skill-pill">Postman / REST APIs</span>
+              <span class="skill-pill">Redis</span>
+            </div>
+          </div>
+
+          <!-- Category 4: Computer Science Disciplines -->
+          <div class="category-card glass-card">
+            <div class="category-header">
+              <span class="category-icon">🧠</span>
+              <h4 class="category-title">Computer Science Foundations</h4>
+            </div>
+            <div class="pills-wrapper">
+              <span class="skill-pill">Data Structures &amp; Algorithms</span>
+              <span class="skill-pill">Operating Systems</span>
+              <span class="skill-pill">Computer Networks</span>
+              <span class="skill-pill">Distributed Consensus</span>
+              <span class="skill-pill">System Architecture</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3: Projects (Responsive 3-Column Grid) -->
+    <section id="projects" class="projects-section container">
+      <div class="section-header">
+        <span class="section-tag">Featured Portfolio</span>
+        <h2 class="section-title">Engineered Projects</h2>
+        <p class="section-subtitle">Real-world systems, machine learning pipelines, and responsive web applications built with rigorous standards.</p>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project 1: NeuroVision AI -->
+        <article class="project-card glass-card">
+          <div class="project-image-box">
+            <svg class="project-svg" viewBox="0 0 400 240" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="NeuroVision AI Preview">
+              <rect width="400" height="240" fill="#0E1422"/>
+              <circle cx="200" cy="120" r="70" stroke="#00F0FF" stroke-width="1.5" stroke-dasharray="5 5" opacity="0.6"/>
+              <circle cx="200" cy="120" r="45" fill="rgba(0, 240, 255, 0.1)" stroke="#7C3AED" stroke-width="2"/>
+              <!-- Neural Mesh Nodes -->
+              <circle cx="150" cy="90" r="6" fill="#00F0FF"/>
+              <circle cx="250" cy="90" r="6" fill="#7C3AED"/>
+              <circle cx="170" cy="150" r="6" fill="#7C3AED"/>
+              <circle cx="230" cy="150" r="6" fill="#00F0FF"/>
+              <circle cx="200" cy="120" r="8" fill="#FFFFFF"/>
+              <!-- Connections -->
+              <line x1="150" y1="90" x2="200" y2="120" stroke="#00F0FF" stroke-width="1.5"/>
+              <line x1="250" y1="90" x2="200" y2="120" stroke="#7C3AED" stroke-width="1.5"/>
+              <line x1="170" y1="150" x2="200" y2="120" stroke="#7C3AED" stroke-width="1.5"/>
+              <line x1="230" y1="150" x2="200" y2="120" stroke="#00F0FF" stroke-width="1.5"/>
+              <line x1="150" y1="90" x2="170" y2="150" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+              <line x1="250" y1="90" x2="230" y2="150" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+              <!-- UI Overlay -->
+              <rect x="24" y="20" width="80" height="20" rx="10" fill="rgba(0, 240, 255, 0.2)"/>
+              <text x="36" y="34" fill="#00F0FF" font-family="'Space Grotesk', sans-serif" font-size="10" font-weight="bold">AI / VISION</text>
+            </svg>
+            <div class="project-overlay">
+              <span class="overlay-text">Explore Architecture &rarr;</span>
+            </div>
+          </div>
+
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag">PyTorch</span>
+              <span class="tag">FastAPI</span>
+              <span class="tag">OpenCV</span>
+              <span class="tag">Docker</span>
+            </div>
+            <h3 class="project-title">NeuroVision: Real-Time Edge Vision</h3>
+            <p class="project-desc">
+              Lightweight convolutional network for edge anomaly detection running at 62 FPS on constrained devices with 98.4% diagnostic accuracy.
+            </p>
+            <div class="project-footer">
+              <a href="#contact" class="project-link">
+                <span>View Demo</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+              </a>
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-link secondary">
+                <span>Source</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2: HyperScale K-V Store -->
+        <article class="project-card glass-card">
+          <div class="project-image-box">
+            <svg class="project-svg" viewBox="0 0 400 240" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="HyperScale K-V Store Preview">
+              <rect width="400" height="240" fill="#0E1422"/>
+              <!-- Distributed Nodes Matrix -->
+              <rect x="70" y="60" width="70" height="50" rx="8" fill="#1A2234" stroke="#7C3AED" stroke-width="1.5"/>
+              <rect x="260" y="60" width="70" height="50" rx="8" fill="#1A2234" stroke="#00F0FF" stroke-width="1.5"/>
+              <rect x="165" y="140" width="70" height="50" rx="8" fill="#1A2234" stroke="#7C3AED" stroke-width="1.5"/>
+              <!-- Node text -->
+              <text x="88" y="90" fill="#E2E8F0" font-family="'Space Grotesk', sans-serif" font-size="11">Node A</text>
+              <text x="278" y="90" fill="#E2E8F0" font-family="'Space Grotesk', sans-serif" font-size="11">Node B</text>
+              <text x="178" y="170" fill="#E2E8F0" font-family="'Space Grotesk', sans-serif" font-size="11">Leader</text>
+              <!-- Raft Sync Lines -->
+              <path d="M140 85L260 85" stroke="#7C3AED" stroke-width="1.5" stroke-dasharray="4 4"/>
+              <path d="M105 110L165 155" stroke="#00F0FF" stroke-width="1.5"/>
+              <path d="M295 110L235 155" stroke="#00F0FF" stroke-width="1.5"/>
+              <!-- UI Overlay -->
+              <rect x="24" y="20" width="95" height="20" rx="10" fill="rgba(124, 58, 237, 0.25)"/>
+              <text x="36" y="34" fill="#C084FC" font-family="'Space Grotesk', sans-serif" font-size="10" font-weight="bold">SYSTEMS / C++</text>
+            </svg>
+            <div class="project-overlay">
+              <span class="overlay-text">Explore Architecture &rarr;</span>
+            </div>
+          </div>
+
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag">C++20</span>
+              <span class="tag">gRPC</span>
+              <span class="tag">Raft Consensus</span>
+              <span class="tag">Linux</span>
+            </div>
+            <h3 class="project-title">HyperScale: Distributed KV Engine</h3>
+            <p class="project-desc">
+              Fault-tolerant distributed key-value store using Raft consensus algorithm. Handles network partitions with zero data inconsistency and sub-millisecond writes.
+            </p>
+            <div class="project-footer">
+              <a href="#contact" class="project-link">
+                <span>View Demo</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+              </a>
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-link secondary">
+                <span>Source</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3: PulseFlow Analytics -->
+        <article class="project-card glass-card">
+          <div class="project-image-box">
+            <svg class="project-svg" viewBox="0 0 400 240" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="PulseFlow Analytics Preview">
+              <rect width="400" height="240" fill="#0E1422"/>
+              <!-- Analytics Graph Bars -->
+              <rect x="70" y="140" width="22" height="50" rx="4" fill="#00F0FF" opacity="0.8"/>
+              <rect x="110" y="110" width="22" height="80" rx="4" fill="#00F0FF"/>
+              <rect x="150" y="80" width="22" height="110" rx="4" fill="url(#grad-bar)"/>
+              <rect x="190" y="125" width="22" height="65" rx="4" fill="#7C3AED" opacity="0.8"/>
+              <rect x="230" y="95" width="22" height="95" rx="4" fill="#7C3AED"/>
+              <rect x="270" y="70" width="22" height="120" rx="4" fill="#00F0FF"/>
+              <rect x="310" y="105" width="22" height="85" rx="4" fill="#7C3AED"/>
+              <!-- Trend Line -->
+              <path d="M81 130L121 100L161 70L201 115L241 85L281 60L321 95" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+              <circle cx="281" cy="60" r="4" fill="#00F0FF"/>
+              <!-- UI Overlay -->
+              <rect x="24" y="20" width="90" height="20" rx="10" fill="rgba(0, 240, 255, 0.2)"/>
+              <text x="36" y="34" fill="#00F0FF" font-family="'Space Grotesk', sans-serif" font-size="10" font-weight="bold">FULL STACK</text>
+              <defs>
+                <linearGradient id="grad-bar" x1="0" y1="0" x2="0" y2="1">
+                  <stop stop-color="#00F0FF"/>
+                  <stop offset="1" stop-color="#7C3AED"/>
+                </linearGradient>
+              </defs>
+            </svg>
+            <div class="project-overlay">
+              <span class="overlay-text">Explore Architecture &rarr;</span>
+            </div>
+          </div>
+
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag">TypeScript</span>
+              <span class="tag">Next.js 14</span>
+              <span class="tag">Tailwind</span>
+              <span class="tag">PostgreSQL</span>
+            </div>
+            <h3 class="project-title">PulseFlow: Telemetry Platform</h3>
+            <p class="project-desc">
+              Real-time monitoring suite processing 10,000+ metric streams/sec with dynamic query aggregation, automated alert hooks, and responsive charts.
+            </p>
+            <div class="project-footer">
+              <a href="#contact" class="project-link">
+                <span>View Demo</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+              </a>
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-link secondary">
+                <span>Source</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 4: QuantumAuth Web -->
+        <article class="project-card glass-card">
+          <div class="project-image-box">
+            <svg class="project-svg" viewBox="0 0 400 240" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="QuantumAuth Web Preview">
+              <rect width="400" height="240" fill="#0E1422"/>
+              <!-- Security Keyhole Graphic -->
+              <circle cx="200" cy="115" r="50" stroke="#7C3AED" stroke-width="2" fill="rgba(124, 58, 237, 0.1)"/>
+              <path d="M195 105C195 102.2 197.2 100 200 100C202.8 100 205 102.2 205 105C205 107.4 203.4 109.4 201.2 109.9L203 130H197L198.8 109.9C196.6 109.4 195 107.4 195 105Z" fill="#00F0FF"/>
+              <circle cx="200" cy="115" r="75" stroke="#00F0FF" stroke-width="1" stroke-dasharray="3 6"/>
+              <!-- UI Overlay -->
+              <rect x="24" y="20" width="85" height="20" rx="10" fill="rgba(124, 58, 237, 0.25)"/>
+              <text x="36" y="34" fill="#C084FC" font-family="'Space Grotesk', sans-serif" font-size="10" font-weight="bold">SECURITY / CRYPTO</text>
+            </svg>
+            <div class="project-overlay">
+              <span class="overlay-text">Explore Architecture &rarr;</span>
+            </div>
+          </div>
+
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag">Rust</span>
+              <span class="tag">WebAssembly</span>
+              <span class="tag">OAuth 2.1</span>
+              <span class="tag">Zero-Knowledge</span>
+            </div>
+            <h3 class="project-title">QuantumAuth: ZK Identity Provider</h3>
+            <p class="project-desc">
+              Privacy-first cryptographic authentication server proving credential validity without transmitting passwords or personal identification.
+            </p>
+            <div class="project-footer">
+              <a href="#contact" class="project-link">
+                <span>View Demo</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+              </a>
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-link secondary">
+                <span>Source</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 5: CloudNexus Gateway -->
+        <article class="project-card glass-card">
+          <div class="project-image-box">
+            <svg class="project-svg" viewBox="0 0 400 240" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="CloudNexus Gateway Preview">
+              <rect width="400" height="240" fill="#0E1422"/>
+              <!-- Cloud Network Hub -->
+              <ellipse cx="200" cy="120" rx="90" ry="45" stroke="#00F0FF" stroke-width="1.5" stroke-dasharray="4 4"/>
+              <circle cx="200" cy="120" r="22" fill="#121826" stroke="#7C3AED" stroke-width="2"/>
+              <path d="M192 120H208M200 112V128" stroke="#00F0FF" stroke-width="2" stroke-linecap="round"/>
+              <circle cx="130" cy="120" r="12" fill="#121826" stroke="#00F0FF" stroke-width="1.5"/>
+              <circle cx="270" cy="120" r="12" fill="#121826" stroke="#00F0FF" stroke-width="1.5"/>
+              <circle cx="200" cy="75" r="12" fill="#121826" stroke="#7C3AED" stroke-width="1.5"/>
+              <circle cx="200" cy="165" r="12" fill="#121826" stroke="#7C3AED" stroke-width="1.5"/>
+              <!-- UI Overlay -->
+              <rect x="24" y="20" width="85" height="20" rx="10" fill="rgba(0, 240, 255, 0.2)"/>
+              <text x="36" y="34" fill="#00F0FF" font-family="'Space Grotesk', sans-serif" font-size="10" font-weight="bold">CLOUD / GCE</text>
+            </svg>
+            <div class="project-overlay">
+              <span class="overlay-text">Explore Architecture &rarr;</span>
+            </div>
+          </div>
+
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag">Go (Golang)</span>
+              <span class="tag">Redis Cluster</span>
+              <span class="tag">GCP</span>
+              <span class="tag">Reverse Proxy</span>
+            </div>
+            <h3 class="project-title">CloudNexus: Dynamic Micro-Gateway</h3>
+            <p class="project-desc">
+              High-throughput reverse proxy with token-bucket rate limiting, TLS termination, and health check automatic circuit breaking.
+            </p>
+            <div class="project-footer">
+              <a href="#contact" class="project-link">
+                <span>View Demo</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+              </a>
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-link secondary">
+                <span>Source</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 6: StudySphere AI -->
+        <article class="project-card glass-card">
+          <div class="project-image-box">
+            <svg class="project-svg" viewBox="0 0 400 240" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="StudySphere AI Preview">
+              <rect width="400" height="240" fill="#0E1422"/>
+              <!-- Book / AI Brain Graphic -->
+              <path d="M140 100C160 85 190 90 200 105C210 90 240 85 260 100V170C240 155 210 160 200 175C190 160 160 155 140 170V100Z" fill="rgba(0, 240, 255, 0.15)" stroke="#00F0FF" stroke-width="2"/>
+              <line x1="200" y1="105" x2="200" y2="175" stroke="#7C3AED" stroke-width="2"/>
+              <circle cx="200" cy="75" r="10" fill="#7C3AED"/>
+              <path d="M195 75L200 70L205 75" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round"/>
+              <!-- UI Overlay -->
+              <rect x="24" y="20" width="85" height="20" rx="10" fill="rgba(124, 58, 237, 0.25)"/>
+              <text x="36" y="34" fill="#C084FC" font-family="'Space Grotesk', sans-serif" font-size="10" font-weight="bold">EDTECH / LLM</text>
+            </svg>
+            <div class="project-overlay">
+              <span class="overlay-text">Explore Architecture &rarr;</span>
+            </div>
+          </div>
+
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag">React</span>
+              <span class="tag">FastAPI</span>
+              <span class="tag">LangChain</span>
+              <span class="tag">ChromaDB</span>
+            </div>
+            <h3 class="project-title">StudySphere: Academic Copilot</h3>
+            <p class="project-desc">
+              Retrieval-augmented knowledge engine synthesizing lecture slides and textbooks into interactive flashcards and verifiable citations for 2,000+ campus students.
+            </p>
+            <div class="project-footer">
+              <a href="#contact" class="project-link">
+                <span>View Demo</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+              </a>
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-link secondary">
+                <span>Source</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Section 4: Achievements & Timeline -->
+    <section id="achievements" class="achievements-section container">
+      <div class="section-header">
+        <span class="section-tag">Milestones &amp; Honors</span>
+        <h2 class="section-title">Leadership &amp; Awards</h2>
+        <p class="section-subtitle">Chronological progression of collegiate achievements, research fellowships, and industry credentials.</p>
+      </div>
+
+      <div class="timeline">
+        <!-- Milestone 1 -->
+        <div class="timeline-item">
+          <div class="timeline-marker">
+            <div class="marker-dot"></div>
+          </div>
+          <div class="timeline-content glass-card">
+            <div class="timeline-meta">
+              <span class="timeline-badge badge-award">🏆 1st Place Winner</span>
+              <time class="timeline-date">Fall 2024</time>
+            </div>
+            <h3 class="timeline-title">Grand Prize Winner - HackMIT 2024</h3>
+            <p class="timeline-org">Massachusetts Institute of Technology &bull; 1,400+ Competitors</p>
+            <p class="timeline-desc">
+              Architected a zero-latency autonomous disaster dispatch pipeline coordinating drone telemetry and local emergency responders under severe network bandwidth constraints.
+            </p>
+          </div>
+        </div>
+
+        <!-- Milestone 2 -->
+        <div class="timeline-item">
+          <div class="timeline-marker">
+            <div class="marker-dot"></div>
+          </div>
+          <div class="timeline-content glass-card">
+            <div class="timeline-meta">
+              <span class="timeline-badge badge-cert">📜 Professional Certification</span>
+              <time class="timeline-date">Summer 2024</time>
+            </div>
+            <h3 class="timeline-title">Google Cloud Certified: Associate Cloud Engineer</h3>
+            <p class="timeline-org">Google Cloud Credentials</p>
+            <p class="timeline-desc">
+              Demonstrated verified competency in deploying applications, monitoring operations, managing enterprise IAM hierarchies, and provisioning resilient cloud infrastructure.
+            </p>
+          </div>
+        </div>
+
+        <!-- Milestone 3 -->
+        <div class="timeline-item">
+          <div class="timeline-marker">
+            <div class="marker-dot"></div>
+          </div>
+          <div class="timeline-content glass-card">
+            <div class="timeline-meta">
+              <span class="timeline-badge badge-lead">👥 Leadership</span>
+              <time class="timeline-date">2023 - 2025</time>
+            </div>
+            <h3 class="timeline-title">President, ACM Student Chapter</h3>
+            <p class="timeline-org">University Association for Computing Machinery</p>
+            <p class="timeline-desc">
+              Leading a technical community of 450+ student members. Spearheaded 24 technical workshops on Systems &amp; AI, and directed the university's flagship annual 48-hour collegiate hackathon.
+            </p>
+          </div>
+        </div>
+
+        <!-- Milestone 4 -->
+        <div class="timeline-item">
+          <div class="timeline-marker">
+            <div class="marker-dot"></div>
+          </div>
+          <div class="timeline-content glass-card">
+            <div class="timeline-meta">
+              <span class="timeline-badge badge-research">🔬 Research</span>
+              <time class="timeline-date">Spring 2024</time>
+            </div>
+            <h3 class="timeline-title">Undergraduate Research Fellow</h3>
+            <p class="timeline-org">University Distributed Systems &amp; Neural Computing Lab</p>
+            <p class="timeline-desc">
+              Co-authored experimental benchmark on GPU tensor kernel optimization for sparse matrix multiplications, resulting in a 2.4x throughput gain in model training routines.
+            </p>
+          </div>
+        </div>
+
+        <!-- Milestone 5 -->
+        <div class="timeline-item">
+          <div class="timeline-marker">
+            <div class="marker-dot"></div>
+          </div>
+          <div class="timeline-content glass-card">
+            <div class="timeline-meta">
+              <span class="timeline-badge badge-acad">⭐ Academic Honor</span>
+              <time class="timeline-date">2022 - 2024</time>
+            </div>
+            <h3 class="timeline-title">Dean's List with High Distinction</h3>
+            <p class="timeline-org">College of Engineering &amp; Computer Science</p>
+            <p class="timeline-desc">
+              Awarded for maintaining top 3% academic standing across 5 consecutive semesters while serving as a Peer Tutor in Data Structures and Systems Programming.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 5: Contact -->
+    <section id="contact" class="contact-section container">
+      <div class="section-header">
+        <span class="section-tag">Let's Build Together</span>
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="section-subtitle">Whether you have an internship opportunity, a project proposal, or simply want to talk systems engineering, my inbox is open.</p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Contact Information & Channels -->
+        <div class="contact-info-card glass-card">
+          <h3 class="info-title">Direct Inquiries</h3>
+          <p class="info-text">
+            I am actively seeking 2025 Software Engineering &amp; AI/ML Internship roles. Feel free to ping me on any of my channels or send a direct note.
+          </p>
+
+          <div class="contact-items-list">
+            <div class="contact-item">
+              <div class="item-icon-box">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div class="item-details">
+                <span class="item-label">Email</span>
+                <a href="mailto:alex.rivera@university.edu" class="item-value">alex.rivera@university.edu</a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="item-icon-box">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div class="item-details">
+                <span class="item-label">Location</span>
+                <span class="item-value">Boston, MA &bull; Open to Relocation</span>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="item-icon-box">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+              </div>
+              <div class="item-details">
+                <span class="item-label">University</span>
+                <span class="item-value">B.S. in Computer Science (Class of 2026)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Social Links Grid -->
+          <div class="socials-box">
+            <span class="socials-title">Connect Across The Web</span>
+            <div class="social-links">
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="GitHub Profile">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                <span>GitHub</span>
+              </a>
+
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn Profile">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                <span>LinkedIn</span>
+              </a>
+
+              <a href="https://x.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Twitter X Profile">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4l11.733 16h4.267l-11.733 -16z"/><path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772"/></svg>
+                <span>X / Twitter</span>
+              </a>
+
+              <a href="mailto:alex.rivera@university.edu" class="social-btn" aria-label="Email Me">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M16 8v5a3 3 0 0 0 6 0v-1a10 10 0 1 0-3.92 7.94"/></svg>
+                <span>Email</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form (Pure HTML & CSS) -->
+        <div class="contact-form-card glass-card">
+          <h3 class="form-title">Send a Message</h3>
+          <p class="form-caption">Fill out this note and I'll get back to you within 24 hours.</p>
+
+          <form action="#top" method="get" class="contact-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="contact-name" class="form-label">Full Name</label>
+                <input type="text" id="contact-name" name="name" class="form-input" placeholder="Sarah Connor" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-email" class="form-label">Email Address</label>
+                <input type="email" id="contact-email" name="email" class="form-input" placeholder="sarah@tech.co" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-subject" class="form-label">Subject</label>
+              <input type="text" id="contact-subject" name="subject" class="form-input" placeholder="Summer 2025 Internship / Project Collaboration" required>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-message" class="form-label">Message</label>
+              <textarea id="contact-message" name="message" rows="5" class="form-input form-textarea" placeholder="Hello Alex, we were impressed by your distributed systems projects..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block">
+              <span>Send Message</span>
+              <svg class="btn-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Clean Minimal Footer -->
+  <footer class="footer">
+    <div class="footer-container container">
+      <div class="footer-brand">
+        <a href="#top" class="nav-brand">
+          <span class="brand-code">&lt;</span><span class="brand-name">Alex.dev</span><span class="brand-code"> /&gt;</span>
+        </a>
+        <p class="footer-copy">Crafted with pure HTML5 &amp; CSS3. No JavaScript used.</p>
+      </div>
+
+      <ul class="footer-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="footer-right">
+        <a href="#top" class="back-to-top" aria-label="Back to Top">
+          <span>Top</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 15l-6-6-6 6"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
